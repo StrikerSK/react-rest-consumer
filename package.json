@@ -9,8 +9,8 @@
     "serve": "^9.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
+    "start": "react-scripts -s start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "bundle": "npm run clean && npm run build:server && npm run build:client",
