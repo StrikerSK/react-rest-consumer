@@ -12,3 +12,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.student-list{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.student-links{
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+
+.column{
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.student-details{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.student-details p{
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+
+  body #root{
+    width: 95%;
+  }
+
+  .student-links{
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+
+}

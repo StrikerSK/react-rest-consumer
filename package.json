@@ -1,20 +1,23 @@
 {
-  "name": "restconsuimer",
+  "name": "rest-consumer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "next": "^7.0.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4",
-    "serve": "^9.4.0"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4"
+  },
+  "engines": {
+    "node": "10.6.0",
+    "npm": "6.1.0"
   },
   "scripts": {
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "start": "react-scripts -s start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "bundle": "npm run clean && npm run build:server && npm run build:client",
-    "heroku-postbuild": "npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

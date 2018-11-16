@@ -30,12 +30,3 @@
     transform: rotate(360deg);
   }
 }
-
-.student-list{
-  width: 50%;
-  margin: 0 auto;
-}
-
-.student-list h1{
-  text-align: center;
-}
