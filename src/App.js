@@ -1,10 +1,10 @@
 import React, {PureComponent} from 'react';
-import Link from 'next/link';
-import {BrowserRouter, NavLink, Route, Switch, Redirect} from "react-router-dom";
+import {BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
 
 import Student from "./Components/Student";
 import Welcome from "./Components/Welcome";
 import WelcomePage from "./Components/WelcomePage";
+import RestPost from "./Components/RestPost";
 
 class App extends PureComponent {
     constructor(props) {
@@ -16,7 +16,7 @@ class App extends PureComponent {
 
     componentDidMount() {
         fetch("https://springhelloworldapp.herokuapp.com/REST/getStudents")
-        // fetch("http://localhost:8080/REST/getStudent s")
+        // fetch("http://localhost:8080/REST/getStudents")
             .then(response => response.json())
             .then((result) => this.setState({ students: result }))
     }
@@ -25,20 +25,13 @@ class App extends PureComponent {
     return (
       <BrowserRouter>
           <div className="App">
-              <h4>Student list:</h4>
-              <ul className="student-links">
-                  {this.state.students.map(item => (
-                      <li key={item.id}><NavLink to={`/student/${item.id}`}>{item.firstName} {item.lastName}</NavLink></li>
-                  ))}
-              </ul>
-
               <Switch>
-                  <Route exact strict path="/" component={WelcomePage}/>
+                  <Route exact strict path="/" render={() => <WelcomePage students={this.state.students} /> }/>
                   <Route exact strict path="/student/:studentId" component={Student}/>
                   <Route exact strict path="/welcome/:name" component={Welcome}/>
+                  <Route exact strict path="/post" component={RestPost}/>
                   <Redirect to="/"/>
               </Switch>
-
           </div>
       </BrowserRouter>
     );

@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 // const API = `http://localhost:8080/REST/getStudent?id=`;
 const API = `https://springhelloworldapp.herokuapp.com/REST/getStudent?id=`;
@@ -61,6 +62,9 @@ class Student extends React.Component{
                             {Student.listLanguages(this.state.spokenLanguages)}
                         </ul>
                     </div>
+                </div>
+                <div>
+                    <NavLink to={"/"}>Back</NavLink>
                 </div>
             </div>
         );
