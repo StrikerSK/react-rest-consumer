@@ -3,7 +3,7 @@ import * as React from "react";
 class CountriesComponent extends React.Component {
 
     getCountries(){
-        const countries = ["Slovakia", "Czech republic", "Poland", "Germany", "Hungary", "Ukraine"];
+        const countries = ["Czech republic", "Germany", "Hungary", "Poland", "Slovakia", "Ukraine"];
 
         return(
             countries.map(country => <option value={country}>{country}</option>)

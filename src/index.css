@@ -44,6 +44,26 @@ code {
   margin: 0;
 }
 
+.newUser{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.newUser input[type=text], .newUser select{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.newUser h1{
+  text-align: center;
+}
+
 @media screen and (max-width: 480px) {
 
   body #root{
