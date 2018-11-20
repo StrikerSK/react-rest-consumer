@@ -64,6 +64,20 @@ code {
   text-align: center;
 }
 
+.checkbox-grid{
+  width: 100%;
+}
+
+.checkbox-grid li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.checkbox-select{
+  border: 0;
+}
+
 @media screen and (max-width: 480px) {
 
   body #root{

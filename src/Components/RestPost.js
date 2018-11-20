@@ -7,7 +7,7 @@ class RestPost extends React.Component {
     constructor(props) {
         super(props);
         this.state = { firstName: "", lastName: "", country: "", university: "" , faculty: "",
-            faculties: [], universities: [], lang: ["C", "C++", "C#", "Java", "PHP", "HTML", "CSS"], knownLanguages: [],
+            faculties: [], universities: [], knownLanguages: [],
             spokenLanguages: [], favoriteLanguage: ''
         };
 
@@ -41,7 +41,7 @@ class RestPost extends React.Component {
 
     handleSubmit() {
         alert(`User created ${this.state.lastName}`);
-        this.createBlogPost();
+        this.addStudent();
     }
 
     changeProgrammingLanguage(event) {
@@ -80,7 +80,7 @@ class RestPost extends React.Component {
         this.setState({ favoriteLanguage: e.target.value })
     }
 
-    createBlogPost() {
+    addStudent() {
         const { firstName, lastName, university, faculty, country, knownLanguages, spokenLanguages, favoriteLanguage} = this.state;
 
         return fetch("http://localhost:8080/REST/saveStudent", {
@@ -99,13 +99,13 @@ class RestPost extends React.Component {
                 "Content-Type": "application/json",
             },
         })
-            .then(res => res)
+            .then(this.props.history.push("/"))
             .catch(err => err);
     }
 
     render() {
-        const programmingLanguages = ["C", "C++", "C#", "Java", "PHP", "HTML", "CSS"];
-        const spokenLanguages = ["Czech", "Slovak", "Ukrainian", "Russian", "English", "French", "German"];
+        const programmingLanguages = ["C", "C++", "C#", "Java", "PHP", "Ruby","HTML", "CSS", "Javascript"];
+        const spokenLanguages = ["Czech", "Slovak", "Ukrainian", "Russian", "English", "French", "German", "Chinese"];
 
         return (
             <div className={"newUser"}>
@@ -145,21 +145,31 @@ class RestPost extends React.Component {
                         </select>
                     </label>
                     <br/>
-                    <div className={"favLanguages"}>
-                        <strong>Select favorite programming language:</strong>
-                        <RadioComponent options={programmingLanguages} onChange={this.handleRadio.bind(this)}/>
-                    </div>
-                    <br/>
-                    <div className={"progLanguages"}>
-                        <strong>Select programming languages:</strong>
-                        <CheckboxComponents languages={programmingLanguages} onChange={this.changeProgrammingLanguage.bind(this)}/>
-                    </div>
-                    <br/>
-                    <div className={"spokenLanguages"}>
-                        <strong>Select spoken languages:</strong>
-                        <CheckboxComponents languages={spokenLanguages} onChange={this.changeSpokenLanguage.bind(this)}/>
-                    </div>
-                    <br/>
+                    <fieldset className={"checkbox-select"}>
+                        <div className={"favLanguages"}>
+                            <strong>Select favorite programming language:</strong>
+                            <ul className={"checkbox-grid"}>
+                                <RadioComponent options={programmingLanguages} onChange={this.handleRadio.bind(this)}/>
+                                <li><label><input type={"radio"} name={"favLanguage"} value="None" onChange={this.props.onChange}/>None</label></li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                    <fieldset className={"checkbox-select"}>
+                        <div className={"progLanguages"}>
+                            <strong>Select programming languages:</strong>
+                            <ul className={"checkbox-grid"}>
+                                <CheckboxComponents languages={programmingLanguages} onChange={this.changeProgrammingLanguage.bind(this)}/>
+                            </ul>
+                        </div>
+                    </fieldset>
+                    <fieldset className={"checkbox-select"}>
+                        <div className={"spokenLanguages"}>
+                            <strong>Select spoken languages:</strong>
+                            <ul className={"checkbox-grid"}>
+                                <CheckboxComponents languages={spokenLanguages} onChange={this.changeSpokenLanguage.bind(this)}/>
+                            </ul>
+                        </div>
+                    </fieldset>
                     <input type="submit" value="Submit" />
                 </form>
             </div>
