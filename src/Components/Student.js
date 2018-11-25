@@ -42,6 +42,8 @@ class Student extends React.Component{
         const id = event.target.value;
         const newRequest = "http://localhost:8080/REST/deleteStudent/" + id;
 
+        alert("Deleting student with id: " + id);
+
         fetch(newRequest, {
             method: "DELETE",
         }).then(this.props.history.push("/"))
@@ -55,7 +57,7 @@ class Student extends React.Component{
         return (
             <div>
                 <div className={"student-details"}>
-                    <h1>{this.state.student.firstName} {student.lastName}</h1>
+                    <h1>{student.firstName} {student.lastName}</h1>
                     <p>Country of origin: <strong>{student.country}</strong></p>
                     <p>Type of study: <strong>{student.typeOfStudy}</strong></p>
                     <p>Grade of study: <strong>{student.grade}</strong></p>
@@ -81,6 +83,4 @@ class Student extends React.Component{
             </div>
         );
     }
-}
-
-export default Student;
+}export default Student;

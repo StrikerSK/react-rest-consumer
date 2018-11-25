@@ -4,15 +4,11 @@ import CheckboxComponents from "./CheckboxComponents";
 import RadioComponent from "./RadioComponent";
 
 class RestPost extends React.Component {
+
     constructor(props) {
         super(props);
-        this.state = { firstName: "", lastName: "", country: "", university: "" , faculty: "",
-            faculties: [], universities: [], knownLanguages: [],
-            spokenLanguages: [], favoriteLanguage: ''
-        };
+        this.state = { faculties: [], universities: []};
 
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChangeUni = this.handleChangeUni.bind(this);
     }
 
@@ -22,13 +18,6 @@ class RestPost extends React.Component {
             .then(result => this.setState({universities: result}));
     }
 
-    handleChange(event) {
-        const target = event.target;
-        const name = target.name;
-
-        this.setState({ [name]: target.value });
-    }
-
     handleChangeUni(event) {
         const university = event.target.value;
 
@@ -36,94 +25,31 @@ class RestPost extends React.Component {
             .then(response => response.json())
             .then(result => this.setState({faculties: result}));
 
-        this.setState({ university: university });
-    }
-
-    handleSubmit() {
-        alert(`User created ${this.state.lastName}`);
-        this.addStudent();
-    }
-
-    changeProgrammingLanguage(event) {
-        let checkedArray = this.state.knownLanguages;
-        const selectedValue = event.target.value;
-
-        if (event.target.checked === true) {
-            checkedArray.push(selectedValue);
-            this.setState({knownLanguages: checkedArray});
-        } else {
-            const valueIndex = checkedArray.indexOf(selectedValue);
-            checkedArray.splice(valueIndex, 1);
-            this.setState({knownLanguages: checkedArray});
-        }
-
-        console.log(this.state.knownLanguages);
-    }
-
-    changeSpokenLanguage(event) {
-        let checkedArray = this.state.spokenLanguages;
-        const selectedValue = event.target.value;
-
-        if (event.target.checked === true) {
-            checkedArray.push(selectedValue);
-            this.setState({spokenLanguages: checkedArray});
-        } else {
-            const valueIndex = checkedArray.indexOf(selectedValue);
-            checkedArray.splice(valueIndex, 1);
-            this.setState({spokenLanguages: checkedArray});
-        }
-
-        console.log(this.state.spokenLanguages);
-    }
-
-    handleRadio(e) {
-        this.setState({ favoriteLanguage: e.target.value })
-    }
-
-    addStudent() {
-        const { firstName, lastName, university, faculty, country, knownLanguages, spokenLanguages, favoriteLanguage} = this.state;
-
-        return fetch("http://localhost:8080/REST/saveStudent", {
-            method: "POST",
-            body: JSON.stringify({
-                firstName,
-                lastName,
-                country,
-                university,
-                faculty,
-                knownLanguages,
-                spokenLanguages,
-                favoriteLanguage
-            }),
-            headers: {
-                "Content-Type": "application/json",
-            },
-        })
-            .then(this.props.history.push("/"))
-            .catch(err => err);
+        this.props.student.data.university = university;
     }
 
     render() {
-        const programmingLanguages = ["C", "C++", "C#", "Java", "PHP", "Ruby","HTML", "CSS", "Javascript"];
-        const spokenLanguages = ["Czech", "Slovak", "Ukrainian", "Russian", "English", "French", "German", "Chinese"];
+        const programmingLanguages = ["C", "C++", "C#", "Java", "PHP", "Ruby","HTML", "CSS", "Javascript", "PL/SQL"];
+        const spokenLanguages = ["Czech", "Slovak", "Ukrainian", "Russian", "English", "French", "German", "Chinese", "Spanish", "Italian"];
+        const student = this.props.student;
 
         return (
             <div className={"newUser"}>
                 <h1>Create new student</h1>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={student.onSubmit}>
                     <label>
                         <strong>First name:</strong>
                     </label>
-                    <input name="firstName" type={"text"} value={this.state.firstName} onChange={this.handleChange} />
+                    <input name="firstName" type={"text"} value={student.data.firstName} onChange={student.onChange} />
                     <br />
                     <label>
                         <strong>Last name:</strong>
-                        <input name="lastName" type={"text"} value={this.state.lastName} onChange={this.handleChange} />
+                        <input name="lastName" type={"text"} value={student.data.lastName} onChange={student.onChange} />
                     </label>
                     <br />
                     <label>
                         <strong>Country:</strong>
-                        <select name="country" value={this.state.country} onChange={this.handleChange}>\
+                        <select name="country" value={student.data.country} onChange={student.onChange}>\
                             <option value={""} hidden={true}>Choose one</option>
                             <CountriesComponent/>
                         </select>
@@ -131,7 +57,7 @@ class RestPost extends React.Component {
                     <br />
                     <label>
                         <strong>University:</strong>
-                        <select name="university" value={this.state.university} onChange={this.handleChangeUni}>
+                        <select name="university" value={student.data.university} onChange={this.handleChangeUni}>
                             <option hidden="hidden">Choose one</option>
                             {this.state.universities.map(uni => <option value={uni.university_id}>{uni.universityName}</option>)}
                         </select>
@@ -139,7 +65,7 @@ class RestPost extends React.Component {
                     <br />
                     <label>
                         <strong>Faculties:</strong>
-                        <select name="faculty" value={this.state.faculty} onChange={this.handleChange}>
+                        <select name="faculty" value={student.data.faculty} onChange={student.onChange}>
                             <option hidden="hidden">Choose one</option>
                             {this.state.faculties.map(faculty => <option value={faculty.facultyId}>{faculty.facultyName}</option>)}
                         </select>
@@ -149,7 +75,7 @@ class RestPost extends React.Component {
                         <div className={"favLanguages"}>
                             <strong>Select favorite programming language:</strong>
                             <ul className={"checkbox-grid"}>
-                                <RadioComponent options={programmingLanguages} onChange={this.handleRadio.bind(this)}/>
+                                <RadioComponent options={programmingLanguages} onChange={student.onChangeRadio}/>
                                 <li><label><input type={"radio"} name={"favLanguage"} value="None" onChange={this.props.onChange}/>None</label></li>
                             </ul>
                         </div>
@@ -158,7 +84,7 @@ class RestPost extends React.Component {
                         <div className={"progLanguages"}>
                             <strong>Select programming languages:</strong>
                             <ul className={"checkbox-grid"}>
-                                <CheckboxComponents languages={programmingLanguages} onChange={this.changeProgrammingLanguage.bind(this)}/>
+                                <CheckboxComponents languages={programmingLanguages} onChange={student.onChangeProgramming}/>
                             </ul>
                         </div>
                     </fieldset>
@@ -166,15 +92,13 @@ class RestPost extends React.Component {
                         <div className={"spokenLanguages"}>
                             <strong>Select spoken languages:</strong>
                             <ul className={"checkbox-grid"}>
-                                <CheckboxComponents languages={spokenLanguages} onChange={this.changeSpokenLanguage.bind(this)}/>
+                                <CheckboxComponents languages={spokenLanguages} onChange={student.onChangeSpoken}/>
                             </ul>
                         </div>
                     </fieldset>
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Create student"/>
                 </form>
             </div>
         );
     }
-}
-
-export default RestPost;
+}export default RestPost;
