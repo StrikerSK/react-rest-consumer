@@ -5,7 +5,7 @@ class RadioComponent extends React.Component{
     render(){
         const options = this.props.options;
 
-        return options.map(item => <li><label><input type={"radio"} name={"favLanguage"} value={item} onChange={this.props.onChange}/>{item}</label></li>)
+        return options.map(item => <li key={item}><label><input type={"radio"} name={"favLanguage"} value={item} onChange={this.props.onChange}/>{item}</label></li>)
     }
 
 } export default RadioComponent

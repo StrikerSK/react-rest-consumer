@@ -19,12 +19,12 @@ class ConfirmStudent extends React.Component{
     }
 
     render() {
-        const { firstName, lastName, country, university, faculty, faculties, universities, knownLanguages, spokenLanguages, favoriteLanguage} = this.props.student.data;
+        const { firstName, lastName, country, knownLanguages, spokenLanguages} = this.props.student.data;
 
         return (
             <div>
                 <div className={"student-details"}>
-                    <h1>{this.props.student.firstName} {lastName}</h1>
+                    <h1>{firstName} {lastName}</h1>
                     <p>Country of origin: <strong>{country}</strong></p>
                     {/*<p>Type of study: <strong>{typeOfStudy}</strong></p>*/}
                     {/*<p>Grade of study: <strong>{grade}</strong></p>*/}

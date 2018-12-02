@@ -1,7 +1,14 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import {NavLink, withRouter} from "react-router-dom";
+import PropTypes from "prop-types";
 
 class StudentList extends React.Component{
+    static propTypes = {
+        match: PropTypes.object.isRequired,
+        location: PropTypes.object.isRequired,
+        history: PropTypes.object.isRequired
+    };
+
     render() {
         const students = this.props.students;
 
@@ -20,4 +27,4 @@ class StudentList extends React.Component{
     }
 }
 
-export default StudentList;
+export default withRouter(StudentList);

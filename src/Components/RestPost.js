@@ -1,9 +1,17 @@
 import * as React from "react";
+import PropTypes from "prop-types";
 import CountriesComponent from "./CountriesComponent";
 import CheckboxComponents from "./CheckboxComponents";
 import RadioComponent from "./RadioComponent";
+import {withRouter} from "react-router-dom";
 
 class RestPost extends React.Component {
+
+    static propTypes = {
+        match: PropTypes.object.isRequired,
+        location: PropTypes.object.isRequired,
+        history: PropTypes.object.isRequired
+    };
 
     constructor(props) {
         super(props);
@@ -32,10 +40,12 @@ class RestPost extends React.Component {
         const programmingLanguages = ["C", "C++", "C#", "Java", "PHP", "Ruby","HTML", "CSS", "Javascript", "PL/SQL"];
         const spokenLanguages = ["Czech", "Slovak", "Ukrainian", "Russian", "English", "French", "German", "Chinese", "Spanish", "Italian"];
         const student = this.props.student;
+        const { location } = this.props;
 
         return (
             <div className={"newUser"}>
                 <h1>Create new student</h1>
+                <div>You are now at: <strong>{location.pathname}</strong></div>
                 <form onSubmit={student.onSubmit}>
                     <label>
                         <strong>First name:</strong>
@@ -101,4 +111,4 @@ class RestPost extends React.Component {
             </div>
         );
     }
-}export default RestPost;
+}export default withRouter(RestPost);

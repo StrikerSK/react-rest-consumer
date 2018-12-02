@@ -34,7 +34,15 @@ class Student extends React.Component{
         if(language.length === 0){
             return (<li>No language!</li>)
         } else {
-            return language.map(item => <li>{item}</li>)
+            return language.map(item => <li key={item}>{item}</li>)
+        }
+    }
+
+    static listTableLanguages(language){
+        if(language.length === 0){
+            return (<tr><td>No language!</td></tr>)
+        } else {
+            return language.map(item => <tr key={item}><td>{item}</td></tr>)
         }
     }
 
@@ -46,8 +54,9 @@ class Student extends React.Component{
 
         fetch(newRequest, {
             method: "DELETE",
-        }).then(this.props.history.push("/"))
-            .catch(err => err);
+        });
+
+        this.props.history.push("/");
     }
 
     render() {
@@ -58,22 +67,36 @@ class Student extends React.Component{
             <div>
                 <div className={"student-details"}>
                     <h1>{student.firstName} {student.lastName}</h1>
+                    <p>First name: <strong>{student.firstName}</strong></p>
+                    <p>Last name: <strong>{student.lastName}</strong></p>
                     <p>Country of origin: <strong>{student.country}</strong></p>
                     <p>Type of study: <strong>{student.typeOfStudy}</strong></p>
                     <p>Grade of study: <strong>{student.grade}</strong></p>
                 </div>
                 <div className="row">
                     <div className="column">
-                        <ul>
-                            <lh><strong>Programming languages</strong></lh>
-                            {Student.listLanguages(knownLanguages)}
-                        </ul>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Programming languages</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {Student.listTableLanguages(knownLanguages)}
+                            </tbody>
+                        </table>
                     </div>
                     <div className="column">
-                        <ul>
-                            <lh><strong>Spoken languages</strong></lh>
-                            {Student.listLanguages(spokenLanguages)}
-                        </ul>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Spoken languages</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {Student.listTableLanguages(spokenLanguages)}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <button value={student.id} onClick={this.deleteStudent.bind(this)}>Delete: {student.firstName} {student.lastName}</button>

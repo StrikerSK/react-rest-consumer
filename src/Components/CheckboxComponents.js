@@ -15,7 +15,7 @@ class CheckboxComponents extends React.Component{
         const languages = this.props.languages;
 
         return(
-            languages.map(item => <li><label><CheckBox id={item} value={item} onChange={this.props.onChange}/>{item}</label></li>)
+            languages.map(item => <li key={item}><label><CheckBox id={item} value={item} onChange={this.props.onChange}/>{item}</label></li>)
         )
     }
 

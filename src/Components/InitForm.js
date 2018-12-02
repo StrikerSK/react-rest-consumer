@@ -25,8 +25,9 @@ class InitForm extends React.Component {
         const {firstName, lastName} = this.state;
 
         alert(`User created: ${firstName} ${lastName}`);
+        console.log("call add user");
         this.addStudent();
-        this.props.history.push('/confirmStudent');
+        console.log("Redirect");
     }
 
     changeProgrammingLanguage(event) {
@@ -63,6 +64,7 @@ class InitForm extends React.Component {
 
     addStudent() {
         const { firstName, lastName, university, faculty, country, knownLanguages, spokenLanguages, favoriteLanguage} = this.state;
+        console.log("called add user");
 
         return fetch("http://localhost:8080/REST/saveStudent", {
             method: "POST",
@@ -79,7 +81,7 @@ class InitForm extends React.Component {
             headers: {
                 "Content-Type": "application/json",
             },
-        });
+        }).then(this.props.history.push("/"));
     }
 
     render() {
