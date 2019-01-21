@@ -6,11 +6,70 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #296EB4;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+*{
+  color: #FDB833;
+}
+
+a{
+  font-size: 20px;
+}
+
+a:hover{
+  color: #B1740F;
+}
+
+h1{
+  font-size: 48px;
+  text-align: center;
+}
+
+h2{
+  font-size: 36px;
+  text-align: center;
+}
+
+button, input[type = submit ] {
+   background:none!important;
+   color:inherit;
+   border:none;
+   padding:0!important;
+   font: inherit;
+   font-size: 20px;
+   border-bottom:1px solid #FDB833;
+   cursor: pointer;
+ }
+
+button:hover, input[type = submit]:hover {
+  color: #B1740F;
+  border-bottom:1px solid #B1740F;
+  cursor: pointer;
+}
+
+p{
+  margin: 0;
+  font-size: 20px;
+}
+
+th{
+  text-align: left;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.inline-boxes{
+  display: inline;
+  margin: 0 15px;
 }
 
 .student-list{
@@ -25,13 +84,15 @@ code {
 }
 
 .column{
+  display: flex;
+  justify-content: center;
   float: left;
   width: 50%;
 }
 
 .row:after {
   content: "";
-  display: table;
+  display: flex;
   clear: both;
 }
 
@@ -81,7 +142,11 @@ code {
 @media screen and (max-width: 480px) {
 
   body #root{
-    width: 95%;
+    width: 100%;
+  }
+
+  .student-list{
+    width: 100%;
   }
 
   .student-links{

@@ -9,6 +9,9 @@ class CheckBox extends React.Component {
     }
 }
 
+/**
+ * Komponenta checkbox pre pripravenie poli checkboxov
+ */
 class CheckboxComponents extends React.Component{
 
     render(){

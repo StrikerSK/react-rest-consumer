@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a5ee39a-1357-47c3-b3a6-9741eb4ac545" name="Default Changelist" comment="">
+    <list default="true" id="f98789f7-624c-4792-b8fc-f7a04f2ef2f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/CheckboxComponents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CheckboxComponents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ConfirmStudent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ConfirmStudent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Elements/CountriesComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Elements/CountriesComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Elements/StudentEditCheckbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Elements/StudentEditCheckbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Elements/StudentEditRadiobutton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Elements/StudentEditRadiobutton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/InitForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/InitForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/RadioComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RadioComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/RestPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RestPost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Student.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Student.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/StudentAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/StudentAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/StudentConfirm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/StudentConfirm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/StudentDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/StudentDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/StudentEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/StudentEdit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/StudentList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/StudentList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Welcome.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,111 +25,119 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/InitForm.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/StudentList.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Components/CheckboxComponents.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/Student.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="23">
-                  <caret line="1" column="46" lean-forward="true" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/ConfirmStudent.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Components/RestPost.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="299">
-                  <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/StudentEdit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="107" column="50" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/StudentDetail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/StudentConfirm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/InitForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="10" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/RadioComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/StudentAdd.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-506">
+              <caret line="26" column="85" selection-start-line="26" selection-start-column="85" selection-end-line="26" selection-end-column="85" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/Elements/StudentEditRadiobutton.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/Elements/CountriesComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/CheckboxComponents.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>studentId</find>
+      <find>localhost:8080</find>
+      <find>http</find>
+      <find>http://springhelloworldapp.herokuapp.com</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,33 +146,33 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/src/Components/CountriesComponent.js" />
-        <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/Components/WelcomePage.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/Components/Welcome.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/Components/ConfirmStudent.js" />
-        <option value="$PROJECT_DIR$/src/Components/RadioComponent.js" />
-        <option value="$PROJECT_DIR$/src/Components/CheckboxComponents.js" />
-        <option value="$PROJECT_DIR$/src/Components/RestPost.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/Components/Student.js" />
-        <option value="$PROJECT_DIR$/src/Components/StudentList.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Components/Elements/UniversityComponent.js" />
+        <option value="$PROJECT_DIR$/src/Components/Elements/CountriesComponent.js" />
+        <option value="$PROJECT_DIR$/src/Components/Elements/StudentEditCheckbox.js" />
+        <option value="$PROJECT_DIR$/src/Components/Elements/StudentEditRadiobutton.js" />
+        <option value="$PROJECT_DIR$/src/Components/Welcome.js" />
+        <option value="$PROJECT_DIR$/src/Components/StudentList.js" />
+        <option value="$PROJECT_DIR$/src/Components/StudentEdit.js" />
+        <option value="$PROJECT_DIR$/src/Components/CheckboxComponents.js" />
+        <option value="$PROJECT_DIR$/src/Components/StudentDetail.js" />
+        <option value="$PROJECT_DIR$/src/Components/StudentConfirm.js" />
+        <option value="$PROJECT_DIR$/src/Components/StudentAdd.js" />
         <option value="$PROJECT_DIR$/src/Components/InitForm.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-3847" />
-    <option name="y" value="520" />
-    <option name="width" value="3852" />
-    <option name="height" value="1067" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="1934" />
+    <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -171,24 +182,31 @@
         <subPane>
           <expand>
             <path>
-              <item name="restconsumer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rest-consumer" type="b2602c69:ProjectViewProjectNode" />
               <item name="rest-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="restconsumer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rest-consumer" type="b2602c69:ProjectViewProjectNode" />
               <item name="rest-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="restconsumer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rest-consumer" type="b2602c69:ProjectViewProjectNode" />
               <item name="rest-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="restconsumer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rest-consumer" type="b2602c69:ProjectViewProjectNode" />
               <item name="rest-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rest-consumer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rest-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Elements" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -199,19 +217,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Git/rest-consumer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="C:\Users\kristian.hanus\Desktop\Programming\React\Git\rest-consumer\node_modules\eslint" />
-    <property name="node.js.selected.package.standard" value="C:\Users\kristian.hanus\Desktop\Programming\React\Git\rest-consumer\node_modules\eslint" />
-    <property name="nodejs_interpreter_path" value="node" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\kristian.hanus\Desktop\Programming\React\rest-consumer\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="C:\Users\kristian.hanus\Desktop\Programming\React\rest-consumer\node_modules\eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Kristian Hanus\Programming\React\rest-consumer\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kristian.hanus\Desktop\Programming\React\rest-consumer\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -225,412 +247,360 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
-    <configuration name="React runner" type="js.build_tools.npm">
+  <component name="RunManager" selected="npm.React start">
+    <configuration name="Student.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="Student.js" working-dir="$PROJECT_DIR$/src/Components">
+      <method v="2" />
+    </configuration>
+    <configuration name="React start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="start" />
       <node-interpreter value="project" />
-      <package-manager value="npm" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm">
-      <command value="start" />
-      <node-interpreter value="project" />
-      <package-manager value="npm" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.React runner" />
-      <item itemvalue="npm.start" />
+      <item itemvalue="Node.js.Student.js" />
+      <item itemvalue="npm.React start" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.start" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1a5ee39a-1357-47c3-b3a6-9741eb4ac545" name="Default Changelist" comment="" />
-      <created>1539110088683</created>
+      <changelist id="f98789f7-624c-4792-b8fc-f7a04f2ef2f7" name="Default Changelist" comment="" />
+      <created>1539362758001</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1539110088683</updated>
-      <workItem from="1539110092807" duration="8711000" />
-      <workItem from="1539191050499" duration="893000" />
-      <workItem from="1539280940838" duration="3256000" />
-      <workItem from="1542390615627" duration="9260000" />
-      <workItem from="1542468244507" duration="19631000" />
-      <workItem from="1542565113786" duration="8910000" />
-      <workItem from="1542625781757" duration="21711000" />
-      <workItem from="1542672198624" duration="10078000" />
-      <workItem from="1542824831011" duration="599000" />
-      <workItem from="1542826501621" duration="6223000" />
-      <workItem from="1542911132577" duration="1286000" />
-      <workItem from="1542916338306" duration="3353000" />
-      <workItem from="1543008739401" duration="15000" />
-      <workItem from="1543008783547" duration="2847000" />
-      <workItem from="1543052386889" duration="10982000" />
-      <workItem from="1543143631673" duration="9087000" />
-      <workItem from="1543246303520" duration="2130000" />
-      <workItem from="1543506916398" duration="3561000" />
-      <workItem from="1543568304212" duration="5712000" />
-      <workItem from="1543672470647" duration="9074000" />
-      <workItem from="1543766164826" duration="1950000" />
-      <workItem from="1543770416504" duration="1841000" />
+      <updated>1539362758001</updated>
+      <workItem from="1539362759384" duration="2388000" />
+      <workItem from="1539386808457" duration="906000" />
+      <workItem from="1539422601902" duration="4079000" />
+      <workItem from="1539445100750" duration="4353000" />
+      <workItem from="1539595802408" duration="2089000" />
+      <workItem from="1539605367146" duration="2877000" />
+      <workItem from="1539615601230" duration="2681000" />
+      <workItem from="1539816838815" duration="188000" />
+      <workItem from="1539817208821" duration="17000" />
+      <workItem from="1539880208648" duration="1055000" />
+      <workItem from="1539881621000" duration="82000" />
+      <workItem from="1539890100685" duration="8000" />
+      <workItem from="1539967134136" duration="632000" />
+      <workItem from="1539970530491" duration="8000" />
+      <workItem from="1539970584222" duration="250000" />
+      <workItem from="1539977050086" duration="1807000" />
+      <workItem from="1539988688611" duration="596000" />
+      <workItem from="1540061979873" duration="2672000" />
+      <workItem from="1540071999572" duration="21000" />
+      <workItem from="1540072044178" duration="2294000" />
+      <workItem from="1540219994765" duration="1427000" />
+      <workItem from="1540318362036" duration="9368000" />
+      <workItem from="1541010768892" duration="1263000" />
+      <workItem from="1541106795311" duration="599000" />
+      <workItem from="1541253240351" duration="1198000" />
+      <workItem from="1541419639276" duration="1182000" />
+      <workItem from="1541428279482" duration="1040000" />
+      <workItem from="1541440059872" duration="381000" />
+      <workItem from="1541440564915" duration="1194000" />
+      <workItem from="1542017737963" duration="708000" />
+      <workItem from="1542020364460" duration="1414000" />
+      <workItem from="1542236183429" duration="1297000" />
+      <workItem from="1542389742968" duration="1471000" />
+      <workItem from="1542467325578" duration="1938000" />
+      <workItem from="1544306835771" duration="28000" />
+      <workItem from="1544306911079" duration="2029000" />
+      <workItem from="1544436943281" duration="599000" />
+      <workItem from="1544647478847" duration="1359000" />
+      <workItem from="1544736245006" duration="72000" />
+      <workItem from="1544741985864" duration="17000" />
+      <workItem from="1544742277866" duration="1399000" />
+      <workItem from="1544894632644" duration="21000" />
+      <workItem from="1544896543051" duration="5000" />
+      <workItem from="1544900322414" duration="621000" />
+      <workItem from="1545064267515" duration="13000" />
+      <workItem from="1547745365582" duration="1193000" />
+      <workItem from="1547834165400" duration="1644000" />
     </task>
-    <task id="LOCAL-00001" summary="Changing some settings">
-      <created>1539283601867</created>
+    <task id="LOCAL-00001" summary="Updating App file to try receive data from REST">
+      <created>1539363340230</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1539283601867</updated>
+      <updated>1539363340230</updated>
     </task>
-    <task id="LOCAL-00002" summary="React adding Post component">
-      <created>1542471790887</created>
+    <task id="LOCAL-00002" summary="Updating link to REST API">
+      <created>1539378353415</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1542471790887</updated>
+      <updated>1539378353416</updated>
     </task>
-    <task id="LOCAL-00003" summary="Adding programming languages checkboxes and countries component">
-      <created>1542552912496</created>
+    <task id="LOCAL-00003" summary="Testing new recommended setting">
+      <created>1539386944489</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1542552912496</updated>
+      <updated>1539386944489</updated>
     </task>
-    <task id="LOCAL-00004" summary="Adding radiobutton support, editing post form">
-      <created>1542584751058</created>
+    <task id="LOCAL-00004" summary="Testing new recommended setting">
+      <created>1539386960625</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1542584751058</updated>
+      <updated>1539386960625</updated>
     </task>
-    <task id="LOCAL-00005" summary="Adding delete option to student">
-      <created>1542744480952</created>
+    <task id="LOCAL-00005" summary="Adding new information showing to page">
+      <created>1539456991095</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1542744480952</updated>
+      <updated>1539456991095</updated>
     </task>
-    <task id="LOCAL-00006" summary="Adding context part to the form">
-      <created>1543154873428</created>
+    <task id="LOCAL-00006" summary="Adding support for no language">
+      <created>1539618524282</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1543154873428</updated>
+      <updated>1539618524282</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changing app to show students individually">
+      <created>1540320441295</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1540320441295</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changing structure of pushed app">
+      <created>1544307138979</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1544307138979</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Changing structure of pushed app - changing universityComponent">
+      <created>1544307273304</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544307273304</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Changing structure of pushed app - changing universityComponent">
+      <created>1544307994056</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1544307994056</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changing security headers to HTTPS">
+      <created>1544308338593</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1544308338594</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141110000" />
+    <option name="totallyTimeSpent" value="62483000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3847" y="520" width="3852" height="1067" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.117986366" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17702845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4982962" visible="true" weight="0.08370044" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934713" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32441473" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5017038" side_tool="true" weight="0.32819384" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49894625" weight="0.32887402" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32929516" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39977974" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32929516" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50104934" side_tool="true" weight="0.32752994" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4997378" weight="0.33259913" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49934435" weight="0.3253796" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.4989507" weight="0.3215859" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="911" height="867" id="Documentation" order="3" side_tool="true" weight="0.32981253" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23761855" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894625" visible="true" weight="0.32887402" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934713" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32929516" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50105375" side_tool="true" visible="true" weight="0.32887402" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49894625" weight="0.32887402" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changing some settings" />
-    <MESSAGE value="React adding Post component" />
-    <MESSAGE value="Adding programming languages checkboxes and countries component" />
-    <MESSAGE value="Adding radiobutton support, editing post form" />
-    <MESSAGE value="Adding delete option to student" />
-    <MESSAGE value="Adding context part to the form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding context part to the form" />
+    <MESSAGE value="Updating App file to try receive data from REST" />
+    <MESSAGE value="Updating link to REST API" />
+    <MESSAGE value="Testing new recommended setting" />
+    <MESSAGE value="Adding new information showing to page" />
+    <MESSAGE value="Adding support for no language" />
+    <MESSAGE value="Changing app to show students individually" />
+    <MESSAGE value="Changing structure of pushed app" />
+    <MESSAGE value="Changing structure of pushed app - changing universityComponent" />
+    <MESSAGE value="Changing security headers to HTTPS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing security headers to HTTPS" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/static/js/1.6105a37c.chunk.js" />
-    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/manifest.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="317">
+          <caret line="13858" column="6" lean-forward="true" selection-start-line="13858" selection-start-column="6" selection-end-line="13858" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react/cjs/react.development.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
-          <caret line="410" selection-start-line="410" selection-end-line="410" />
+          <caret line="1677" column="4" selection-start-line="1677" selection-start-column="4" selection-end-line="1677" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/ErrorPage.js" />
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/public/manifest.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Student.js" />
+    <entry file="file://$PROJECT_DIR$/src/Components/WelcomePage.js" />
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/ErrorPage.js" />
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+        <state relative-caret-position="-2143">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-router-dom/es/BrowserRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/CountriesComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Welcome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="23">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-897">
-            <folding>
-              <element signature="e#0#41#0" expanded="true" />
-              <element signature="e#0#41#0" expanded="true" />
-              <element signature="e#0#26#0" expanded="true" />
-              <element signature="e#0#35#0" expanded="true" />
-              <element signature="e#0#26#0" expanded="true" />
-              <element signature="e#0#26#0" expanded="true" />
-              <element signature="n#!!doc" expanded="true" />
-              <element signature="e#0#28#0" expanded="true" />
-            </folding>
-          </first_editor>
+          <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/RadioComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-router-dom/es/Link.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="8564" column="4" selection-start-line="8564" selection-start-column="4" selection-end-line="8564" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-router/es/withRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/ConfirmStudent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Student.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="46" lean-forward="true" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/RestPost.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Elements/StudentEditCheckbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Elements/UniversityComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Welcome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/StudentList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/StudentEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="107" column="50" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/CheckboxComponents.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/StudentConfirm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/StudentAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-506">
+          <caret line="26" column="85" selection-start-line="26" selection-start-column="85" selection-end-line="26" selection-end-column="85" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -639,25 +609,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/InitForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+        <state relative-caret-position="207">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="10" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/StudentList.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/StudentDetail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        <state relative-caret-position="368">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/CheckboxComponents.js">
+    <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Elements/StudentEditRadiobutton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Elements/CountriesComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/RadioComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
         </state>
       </provider>
     </entry>

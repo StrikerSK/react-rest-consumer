@@ -1,15 +1,19 @@
 import * as React from "react";
+import {withRouter} from "react-router-dom";
 
+/**
+ * Komponenta pre presuvanie dat medzi komponentmi
+ */
 class InitForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { firstName: "", lastName: "", country: "", university: "" , faculty: "", knownLanguages: [],
-            spokenLanguages: [], favoriteLanguage: ''
-        };
+        this.state = { firstName: "", lastName: "", country: "", university: "", typeOfStudy: "", grade: "", faculty: "", knownLanguages: [],
+            spokenLanguages: [], favoriteLanguage: ''};
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleRadio = this.handleRadio.bind(this);
+        this.addStudent = this.addStudent.bind(this);
         this.changeSpokenLanguage = this.changeSpokenLanguage.bind(this);
         this.changeProgrammingLanguage = this.changeProgrammingLanguage.bind(this);
     }
@@ -63,16 +67,19 @@ class InitForm extends React.Component {
     }
 
     addStudent() {
-        const { firstName, lastName, university, faculty, country, knownLanguages, spokenLanguages, favoriteLanguage} = this.state;
-        console.log("called add user");
+        const { firstName, lastName, university, faculty, typeOfStudy, grade, country, knownLanguages, spokenLanguages, favoriteLanguage} = this.state;
 
-        return fetch("http://localhost:8080/REST/saveStudent", {
+        console.log("called add user");
+        // return fetch("http://localhost:8080/REST/saveStudent", {
+        return fetch("https://springhelloworldapp.herokuapp.com/REST/saveStudent", {
             method: "POST",
             body: JSON.stringify({
                 firstName,
                 lastName,
                 country,
                 university,
+                typeOfStudy,
+                grade,
                 faculty,
                 knownLanguages,
                 spokenLanguages,
@@ -81,7 +88,7 @@ class InitForm extends React.Component {
             headers: {
                 "Content-Type": "application/json",
             },
-        }).then(this.props.history.push("/"));
+        }).then(this.props.history.push("/confirmStudent"));
     }
 
     render() {
@@ -93,7 +100,8 @@ class InitForm extends React.Component {
             onChangeRadio: this.handleRadio,
             onChangeSpoken: this.changeSpokenLanguage,
             onChangeProgramming: this.changeProgrammingLanguage,
+            submitStudent: this.addStudent,
             onSubmit: this.handleSubmit
         });
     }
-}export default InitForm;
+}export default withRouter(InitForm);

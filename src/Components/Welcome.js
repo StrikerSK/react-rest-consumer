@@ -1,5 +1,8 @@
 import React from "react";
 
+/**
+ * Komponenta zobrazuje hlavnu obrazovku webu
+ */
 class Welcome extends React.Component{
     render() {
         return (
