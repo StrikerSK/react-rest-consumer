@@ -1,11 +1,12 @@
 import * as React from "react";
 
-class RadioComponent extends React.Component{
+const RadioComponent = ({options, onChange}) => {
 
-    render(){
-        const options = this.props.options;
+	return options.map(item =>
+		<li key={item}>
+			<label><input type={"radio"} name={"favoriteLanguage"} value={item} onChange={onChange} required={true}/>{item}</label>
+		</li>
+	)
 
-        return options.map(item => <li key={item}><label><input type={"radio"} name={"favoriteLanguage"} value={item} onChange={this.props.onChange} required={true}/>{item}</label></li>)
-    }
-
-} export default RadioComponent
+};
+export default RadioComponent

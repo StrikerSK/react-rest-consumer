@@ -1,23 +1,15 @@
 import * as React from "react";
+import {getUniversityOptions} from "../../lib/DataFetcher";
 
-class UniversityComponent extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {universities: []};
-    }
+const UniversityComponent = () => {
+	const [universities, setUniversities] = React.useState([]);
 
-    componentDidMount() {
-        // fetch("http://localhost:8080/university/getUniversities")
-        fetch("https://springhelloworldapp.herokuapp.com/university/getUniversities")
-            .then(response => response.json())
-            .then(result => this.setState({universities: result}));
-    }
+	React.useEffect(() => {
+		getUniversityOptions(setUniversities);
+	}, []);
 
-    render() {
-        const universities = this.state.universities;
-
-        return (
-            universities.map(item => <option key={item.university_id} value={item.university_id}>{item.universityName}</option>)
-        )
-    }
-} export default UniversityComponent
+	return (
+		universities.map(item => <option key={item.university_id} value={item.university_id}>{item.universityName}</option>)
+	)
+};
+export default UniversityComponent

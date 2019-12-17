@@ -29,9 +29,7 @@ class InitForm extends React.Component {
         const {firstName, lastName} = this.state;
 
         alert(`User created: ${firstName} ${lastName}`);
-        console.log("call add user");
         this.addStudent();
-        console.log("Redirect");
     }
 
     changeProgrammingLanguage(event) {

@@ -1,25 +1,22 @@
 import * as React from "react";
 
-class CheckBox extends React.Component {
-
-    render() {
-        return (
-            <input type="checkbox" id={this.props.id} value={this.props.value} onChange={this.props.onChange}/>
-        )
-    }
-}
+const CheckBox = ({id, value, onChange}) => {
+	return (
+		<input type="checkbox" id={id} value={value} onChange={onChange}/>
+	)
+};
 
 /**
  * Komponenta checkbox pre pripravenie poli checkboxov
  */
-class CheckboxComponents extends React.Component{
+const CheckboxComponents = ({languages, onChange}) => {
 
-    render(){
-        const languages = this.props.languages;
+	return (
+		languages.map(item =>
+			<li key={item}><label><CheckBox id={item} value={item} onChange={onChange}/>{item}</label></li>
+		)
+    )
 
-        return(
-            languages.map(item => <li key={item}><label><CheckBox id={item} value={item} onChange={this.props.onChange}/>{item}</label></li>)
-        )
-    }
+};
 
-} export default CheckboxComponents
+export default CheckboxComponents
